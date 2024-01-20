@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@font-face {
+    font-family : 'Roboto';
+    font-style : normal;
+    font-weight : 400;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+    }
+
 :root{
     --primary-color: #000000;
     --secondary-color: #000000;
@@ -15,6 +23,8 @@
     --nav-hover-background-color: #477a81;
 
 }
+
+
 
 body {
     font-family: var(--parragraph-font);
