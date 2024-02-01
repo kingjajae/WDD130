@@ -27,7 +27,7 @@ h1 {
     color: steelblue;
 }
 
-.grid {
+header, footer, .grid {
     display: grid;
     align-items: center;
     max-width: 840px;
