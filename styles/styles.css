@@ -28,11 +28,8 @@ h1 {
 }
 
 header, footer, .grid {
-    display: grid;
-    align-items: center;
+    margin: 0 auto;
     max-width: 840px;
-    align-content: center;
-    align-items: center;
 }
 
 main {
