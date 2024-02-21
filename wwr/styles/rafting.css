@@ -1,182 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-@font-face {
-    font-family : 'Roboto';
-    font-style : normal;
-    font-weight : 400;
-    font-display : swap;
-    src : url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
-    }
-
-:root{
-    --primary-color: #000000;
-    --secondary-color: #000000;
-    --accent1-color: #004040;
-    --accent2-color: #2ee0ea;
-
-    --heading-font: 'Roboto', sans-serif;
-    --parragraph-font: 'Roboto', sans-serif;
-
-    --nav-background-color: #000000;
-    --nav-link-color: #000000;
-    --nav-hover-link-color: #32d39d;
-    --nav-hover-background-color: #477a81;
-
-}
-
-
-body, h1, h2, p, ul, li, figure {
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd, dt {
     margin: 0;
     padding: 0;
 }
 
-
 body {
-    font-size: 16px;
-    font-family: var(--parragraph-font);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
+a {
+    color: #007bff;
+    text-decoration: none;
+}
 
-@font-face {
-    font-family : 'Roboto';
-    font-style : normal;
-    font-weight : 400;
-    font-display : swap;
-    src : url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
-    }
+a:hover {
+    text-decoration: underline;
+}
 
-    :root{
-        --primary-color: #000000;
-        --secondary-color: #000000;
-        --accent1-color: #004040;
-        --accent2-color: #2ee0ea;
-    
-        --heading-font: 'Roboto', sans-serif;
-        --parragraph-font: 'Roboto', sans-serif;
-    
-        --nav-background-color: #000000;
-        --nav-link-color: #000000;
-        --nav-hover-link-color: #32d39d;
-        --nav-hover-background-color: #477a81;
-    
-    }
-    main {
-        display: flex;
-        align-items: center;
-    }
-    
-    section:first-of-type {
-        text-align: center;
-    }
+/* Header Styles */
+header {
+    background-color: #343a40; /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center align header content */
+}
 
-    h1 {
-        font-family: var(--heading-font);
-        font-weight: bold;
-    }
-    header {
-        background-color: #f8f8f8; 
-        padding: 20px;
-        display: flex;
-        align-items: center; 
-        font-family: var(--heading-font);
-    }
+.logo {
+    height: 40px;
+    margin-right: 20px;
+}
 
-    
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between; 
-        width: 100%;
-    }
-    
-    .logo {
-        max-width: 100px; 
-    }
-    
-    nav a {
-        margin-left: 20px; 
-        text-decoration: none;
-        color: #333; 
-        font-weight: bold;
-    }
+nav {
+    display: flex;
+    justify-content: center; /* Center align nav links */
+}
 
-    form {
-        max-width: 800px;
-        height: auto;
-        margin: 0 auto;
-        padding: 50px;
-        font-family: var(--parragraph-font);
-        background-color: rgb(222, 227, 233);
-        border-radius: 15px;
-        margin-left: 50px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        
-    }
-    
-    fieldset {
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        padding: 10px;
-    }
-    
-    legend {
-        font-weight: bold;
-        font-family: var(--heading-font);
-    }
-    
-    label {
-        display: block;
-        margin-bottom: 5px;
-        font-family: var(--heading-font);
-    }
-    
-    input[type="text"],
-    textarea,
-    select,
-    input[type="number"] {
-        width: 100%;
-        padding: 4px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
-    
-    textarea {
-        height: 50px; 
-    }
-    
-    button[type="submit"] {
-        background-color: var(--accent1-color);
-        color: #fff;
-        font-family: var(--parragraph-font);
-        border: none;
-        padding: 10px 20px;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    
-    button[type="submit"]:hover {
-        background-color: var(--nav-hover-background-color);
-    }
+nav a {
+    color: #fff; /* Light text color for links */
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change font style */
+}
 
-    footer {
-        background-color:var(--accent1-color);
-        color: #fff;
-        padding: 10px;
-        font-family: var(--parragraph-font);
-    }
-    
-    .sociallinks {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .sociallinks img {
-        max-width: 30px;
-        align-items: flex-end;
-    }
-    
-    .sociallinks p {
-        align-content: center;
-    }
+nav a:hover {
+    color: #ffc107; /* Change color on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section.hero button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section.calltoaction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section.calltoaction img {
+    width: 200px;
+    margin: 10px;
+}
+
+section.calltoaction h2 {
+    margin-bottom: 20px; /* Add some spacing */
+}
+
+section h1 {
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40; /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; /* Add some space from main content */
+}
+
+.sociallinks a {
+    margin: 0 10px;
+    transition: transform 0.3s ease; /* Smooth transformation on hover */
+}
+
+.sociallinks a img {
+    width: 30px; /* Adjusted size for social media icons */
+}
+
+.sociallinks a:hover {
+    transform: translateY(-3px); /* Move the icon slightly on hover */
+}
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+iframe {
+    flex: 1;
+    border: none;
+    height: 400px;
+    width: 100%;
+    border-radius: 5px;
+    margin-left: 20px;
+}
